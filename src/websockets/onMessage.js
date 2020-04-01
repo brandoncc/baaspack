@@ -26,6 +26,8 @@ const onMessage = (wss, client, message, models) => {
   const getAll = async () => {
     const { action, collection } = message;
     const model = models[collection];
+    console.log('COLLECTION', collection);
+    console.log('MODELS', model);
     const response = await model.find();
 
     wss.router.sendMessage(client, {

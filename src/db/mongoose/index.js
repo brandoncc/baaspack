@@ -59,7 +59,7 @@ export const generateModels = async (collectionsToCreate) => {
 };
 
 export const seedDatabase = async () => {
-  const collectionNames = ['Message'];
+  const collectionNames = ['messages'];
 
   const appModels = await generateModels(collectionNames);
 

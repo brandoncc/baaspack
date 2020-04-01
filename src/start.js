@@ -18,7 +18,7 @@ import setupMiddleware from './app';
 dotenv.config();
 
 // Set a flag for whether to reseed the database
-const repopulateSeedData = false;
+const repopulateSeedData = true;
 
 // Set DB connection options
 const serverUrl = process.env.SERVER_URL.replace(/\/$/, ''); // remove closing "/" if it exists
